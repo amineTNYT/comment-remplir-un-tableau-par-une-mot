@@ -22,8 +22,8 @@ fonction nombre-mot(ch:chaine):entier
 debut
 s<--1             #Initialisation à 1 (au moins 1 mot même sans espaces)
 pour i de 0 à long(ch)-1 faire
-si ch[i]="" alors  #Si on rencontre un espace
-s<--s+1     #On incrémente le compteur de mots
+      si ch[i]="" alors  #Si on rencontre un espace
+      s<--s+1     #On incrémente le compteur de mots
 finsi
 finpour
 retourner s          #Retourne le nombre total de mots
@@ -40,8 +40,8 @@ Procédure Remplir(ch:chaine;T:tableau de chaine;n:entier)
 Début
 Pour i de 0 à n-2 faire                   #Traite les n-1 premiers mots
       pos←position(" ",ch)                      #Trouve la position du premier espace
-      T[i]←sous_chaine(ch,1,pos-1)               #Extrait le mot avant l'espace
-      ch←effacer(ch,1,pos)                       #Supprime le mot traité de la chaîne
+      T[i]←sous_chaine(ch,0,pos)               #Extrait le mot avant l'espace
+      ch←effacer(ch,0,pos)                       #Supprime le mot traité de la chaîne
 FinPour
 T[n-1]←ch  #Le dernier mot restant va dans la dernière case du tableau
 Fin
