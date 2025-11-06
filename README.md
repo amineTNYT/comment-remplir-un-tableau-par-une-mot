@@ -1,5 +1,6 @@
 # comment-remplir-un-tableau-par-une-mot
 Ce programme a pour but de séparer une phrase en mots et de les stocker dans un tableau.  Fonction Calcule(ch)
+
 PROBLEM:
 "Écrire un programme qui permet de saisir une phrase (chaîne) de taille maximum 25 caractères, puis mettre ces mots dans le tableau t1 et afficher le tableau."
 
